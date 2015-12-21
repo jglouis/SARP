@@ -5,7 +5,7 @@ except:
 
 import networkx as nx
 
-G=nx.Graph()
+G=nx.MultiDiGraph()
 
 G.add_edge(1,2,weight=1)
 G.add_edge(2,1,weight=3)
