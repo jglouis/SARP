@@ -21,6 +21,17 @@ G.add_edge(5,4,weight=11)
 G.add_edge(5,5,weight=21)
 G.add_edge(5,6,weight=12)
 
+G.add_edge(4,7,weight=9)
+G.add_edge(8,5,weight=16)
+G.add_edge(6,9,weight=14)
+G.add_edge(9,6,weight=19)
+
+G.add_edge(7,8,weight=15)
+G.add_edge(8,7,weight=17)
+G.add_edge(8,9,weight=18)
+G.add_edge(9,8,weight=20)
+
+
 elarge=[(u,v) for (u,v,d) in G.edges(data=True) if d['weight'] >0.5]
 esmall=[(u,v) for (u,v,d) in G.edges(data=True) if d['weight'] <=0.5]
 
